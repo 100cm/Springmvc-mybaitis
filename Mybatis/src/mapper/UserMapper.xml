@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhou.dao.UserDAO">
+	<select id="" resultType="com.zhou.model.Users">
+
+
+	</select>
+
+	<insert id="insertUser" parameterType="com.zhou.model.Users" useGeneratedKeys="true" keyProperty="id" >
+		insert into users(name,password) values (#{name} ,#{password})
+	</insert>
+
+	<update id="updateUser" parameterType="User" useGeneratedKeys="true" keyProperty="id"  >
+		update users set name='abc' where id=4;
+
+	</update>
+
+</mapper>
